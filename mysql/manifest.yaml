@@ -5,21 +5,21 @@ metadata:
   namespace: expense
   labels:
     app: mysql
-    project: expense
     tier: db
+    project: expense
 spec:
   replicas: 1
-  selectors:
+  selector:
     matchLabels:
       app: mysql
-      project: expense
       tier: db
+      project: expense
   template:
     metadata:
       labels:
         app: mysql
-        project: expense
         tier: db
+        project: expense
     spec:
       containers:
       - name: mysql
